@@ -47,3 +47,51 @@
 ## story_thankyou
 * thanks
     - utter_noworries
+
+## New Story
+
+* greet
+    - find_facility_types
+* inform{"facility_type":"xubh-q36u"}
+    - slot{"facility_type":"xubh-q36u"}
+    - facility_form
+    - form{"name":"facility_form"}
+    - slot{"facility_type":"xubh-q36u"}
+    - slot{"facility_type":"xubh-q36u"}
+    - slot{"requested_slot":"location"}
+* inform{"location":"San Francisco"}
+    - slot{"location":"San Francisco"}
+    - facility_form
+    - slot{"location":"San Francisco"}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+* inform{"facility_id":"050076"}
+    - slot{"facility_id":"050076"}
+    - find_healthcare_address
+    - slot{"facility_address":"2425 Geary Blvd, San Francisco, CA 94115"}
+    - utter_address
+* thanks
+    - utter_noworries
+
+## New Story
+
+* greet
+    - find_facility_types
+* inform{"facility_type":"b27b-2uc7"}
+    - slot{"facility_type":"b27b-2uc7"}
+    - facility_form
+    - form{"name":"facility_form"}
+    - slot{"facility_type":"b27b-2uc7"}
+    - slot{"facility_type":"b27b-2uc7"}
+    - slot{"requested_slot":"location"}
+* inform{"location":"San Francisco"}
+    - slot{"location":"San Francisco"}
+    - facility_form
+    - slot{"location":"San Francisco"}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+* inform{"facility_id":"555728"}
+    - slot{"facility_id":"555728"}
+    - find_healthcare_address
+    - slot{"facility_address":"1661 Pine Street, San Francisco, CA 94109"}
+    - utter_address
